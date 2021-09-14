@@ -967,13 +967,13 @@ mean_1
 
 
 
-    249.38607007176023
+    249.38607007176
 
 
 
 
 ```python
-df["Engine HP"]=df["Engine HP"].fillna(61546.76347305389)
+df["Engine HP"]=df["Engine HP"].fillna(249.38607007176023)
 df["Engine HP"]
 ```
 
@@ -1016,7 +1016,7 @@ mean_2
 
 
 
-    604.3901863052465
+    249.38607007176
 
 
 
@@ -1028,7 +1028,7 @@ print(round(mean_2))
 ```
 
     249
-    604
+    249
     
 
 # Question 6
