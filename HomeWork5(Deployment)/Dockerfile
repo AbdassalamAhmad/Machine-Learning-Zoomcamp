@@ -12,4 +12,4 @@ COPY ["predict_flask.py", "model1.bin","dv.bin", "./"]
 
 EXPOSE 9696
 
-ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:9696", "predict_flask:app"]
+ENTRYPOINT ["waitress-serve" ,"--listen=0.0.0.0:9696", "predict_flask:app"]
